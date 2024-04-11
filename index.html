@@ -1,0 +1,120 @@
+<!-- made by Robert Lute
+  Dojo Pizzeria app
+  11/13/2023-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./style.css" />
+  <title>Dojo Pizzeria</title>
+</head>
+
+<body>
+  <div class="bkr">
+    <div class="titleContainer">
+      <div class="titleCenter">
+        <h1>Dojo Pizzeria</h1>
+      </div>
+      <div class="beltIMG"><img src="./assets/belt.png" alt=""></div>
+    </div>
+    <div class="topContainer">
+      <div class="navBar">
+        <img style="transform: scaleX(-1);" src="./assets/logo.png" alt="" />
+        <h2>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Menu</a></li>
+            <li class="activeLink">Pizza Builder</a></li>
+            <li><a href="#">About Us</a></li>
+          </ul>
+        </h2>
+        <img src="./assets/logo.png" alt="" />
+      </div>
+    </div>
+    <div class="middleContainer">
+      <div class="formContainer">
+        <div class="FormColumn">
+          <div class="formTitleContainer">
+            <h2>Pizza Builder 2.0</h2>
+          </div>
+          <div class="btnContainer">
+            <Button onclick="randomFunc()">Random Pizza</Button>
+          </div>
+          <div class="formSelects">
+            <p class="selectCrustBox">
+              <label>Crust</label>
+              <select name="" id="selectCrust" onchange="updatePizza()">
+                <option value="Hand Tossed">Hand Tossed</option>
+                <option value="Deep Dish">Deep Dish</option>
+                <option value="Thin Crust">Thin Crust</option>
+                <option value="Stuffed Crust">Stuffed Crust</option>
+              </select>
+            </p>
+            <p class="selectSauceBox">
+              <label>Sauce</label>
+              <select name="" id="selectSauce" onchange="updatePizza()">
+                <option value="Marinara">Marinara</option>
+                <option value="BBQ">BBQ</option>
+                <option value="Pesto">Pesto</option>
+                <option value="Creamy Alfredo">Creamy Alfredo</option>
+              </select>
+            </p>
+            <p class="selectCheeseBox">
+              <label>Cheese</label><br><br>
+              <input type="checkbox" id="cheese1" value="Mozzarella" checked onchange="updatePizza()">
+              <label>Mozzarella</label> <label class="default">(default)</label><br>
+              <input type="checkbox" id="cheese2" value="Feta" onchange="updatePizza()">
+              <label>Feta</label><br>
+              <input type="checkbox" id="cheese3" value="Provalone" onchange="updatePizza()">
+              <label>Provalone</label><br>
+              <input type="checkbox" id="cheese4" value="Chedder" onchange="updatePizza()">
+              <label>Chedder</label><br>
+              <input type="checkbox" id="cheese5" value="Parmesan" onchange="updatePizza()">
+              <label>Parmesan</label><br>
+              <input type="checkbox" id="cheese6" value="Fontina" onchange="updatePizza()">
+              <label>Fontina</label><br>
+              <input type="checkbox" id="cheese7" value="Cotija" onchange="updatePizza()">
+              <label>Cotija</label><br>
+              <input type="checkbox" id="cheese8" value="Somked Gouda" onchange="updatePizza()">
+              <label>Somked Gouda</label><br>
+            </p>
+            <p class="selectToppingsBox">
+              <label>Toppings</label><br><br>
+              <input type="checkbox" id="toppings1" value="Pepperoni" checked onchange="updatePizza()">
+              <label>Pepperoni</label> <label class="default">(default)</label><br>
+              <input type="checkbox" id="toppings2" value="Sausage" onchange="updatePizza()">
+              <label>Sausage</label><br>
+              <input type="checkbox" id="toppings3" value="Conadian Bacon" onchange="updatePizza()">
+              <label>Conadian Bacon</label><br>
+              <input type="checkbox" id="toppings4" value="Peppers" onchange="updatePizza()">
+              <label>Peppers</label><br>
+              <input type="checkbox" id="toppings5" value="Onions" onchange="updatePizza()">
+              <label>Onions</label><br>
+              <input type="checkbox" id="toppings6" value="Mushrooms" onchange="updatePizza()">
+              <label>Mushrooms</label><br>
+              <input type="checkbox" id="toppings7" value="Olives" onchange="updatePizza()">
+              <label>Olives</label><br>
+              <input type="checkbox" id="toppings8" value="Pineapple" onchange="updatePizza()">
+              <label>Pineapple</label><br>
+            </p>
+          </div>
+          <div class="resultsContainer">
+            <div class="resultsLeft">
+              <h3><label>Here is your Pizza!</label></h3>
+              <p class="pizzaSummary" id="pizzaSummary"></p>
+            </div>
+            <div class="resultsRight">
+              <p><img src="./assets/pizza_character.png" alt=""></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="./script.js"></script>
+</body>
+
+</html>
