@@ -18,3 +18,5 @@ Users can click on button to randomize pizza.
 -Calls function to randomly pick crust, sause, cheese, and toppings.  
 -Loops through each cheese and toppings setting true/false values for each.  
 -This is so that you can end up with different amounts of cheeses and toppings each time. 
+
+Screenshot is availible as a preview.  "Preview.JPG"
